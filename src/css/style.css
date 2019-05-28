@@ -172,14 +172,14 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  padding-right: 132px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  padding-right: 92px;
 }
 
 .hero-text__title {
   color: #333333;
-  margin-left: -4px;
+  margin-left: -3px;
   font-size: 41px;
   margin-bottom: 38px;
   line-height: 1.35;
@@ -197,7 +197,7 @@ img {
 }
 
 .hero-list {
-  margin-left: -1px;
+  margin-left: 1px;
   padding: 0;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -240,8 +240,8 @@ img {
   width: 100%;
 }
 
-.hero-item-2 {
-  padding-top: 2px;
+.hero-item-1 {
+  padding-bottom: 6px;
 }
 
 @media (max-width: 1200px) {
