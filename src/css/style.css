@@ -172,9 +172,9 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
-  padding-right: 92px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 15px;
 }
 
 .hero-text__title {
@@ -234,10 +234,6 @@ img {
   max-width: 240px;
   font-size: 14px;
   line-height: 1.75;
-}
-
-.hero-image {
-  width: 100%;
 }
 
 .hero-item-1 {
