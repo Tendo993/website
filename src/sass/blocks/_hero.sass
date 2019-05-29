@@ -1,5 +1,6 @@
 .hero
   padding: 48px 0
+  background-color: $secondary
   &-block
     display: flex
   &-text
@@ -26,6 +27,8 @@
       display: flex
       align-items: center
       margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
     &__images
       min-width: 36px
       min-height: 36px
@@ -41,7 +44,40 @@
       line-height: 1.75
   &-item-1
     padding-bottom: 6px
-@media (max-width: 1200px)
+@media (min-width: 960px) and (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+    &-text
+      padding-right: 0
+      justify-content: space-around
+      &__title
+        text-align: center
+      &__subtitle
+        display: block
+    &-list
+      margin-bottom: 44px
+      display: inline-flex
+      justify-content: center
+      width: 100%
+      &__item
+        margin-bottom: 0
+        margin-right: 25px
+    &-item-1
+      margin-bottom: 0
+      padding-bottom: 0
+    &-item-2
+      margin-bottom: 0
+    &-item-3
+      margin-bottom: 0
+    // &-text
+    //   flex-basis: 100%
+    // &-image
+    //   flex-basis: 100%
+  
+@media (max-width: 959px)
   .hero
     &-block
       flex-direction: column
@@ -70,12 +106,14 @@
     &-text
       &__title
         line-height: 1.25
-        margin-left: 0.5px
+        margin-left: 0px
         margin-bottom: 7px
       &__subtitle
         margin-left: 2px
-        margin-bottom: 12.5px
+        margin-bottom: 14px
     &-list
+      &__item
+        margin-left: -2px
       &__images
         min-height: 35px
         min-width: 35px
@@ -86,9 +124,9 @@
         line-height: 1.2
     &-image
       width: 94%
-.hero-item-1
-  margin-bottom: 21px
-.hero-item-2
-  margin-bottom: 20px
-.hero-item-3
-  margin-bottom: -6px
+    &-item-1
+      margin-bottom: 16px
+    &-item-2
+      margin-bottom: 20px
+    &-item-3
+      margin-bottom: -6px
