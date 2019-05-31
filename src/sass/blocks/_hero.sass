@@ -5,7 +5,7 @@
     display: flex
   &-text
     flex-basis: 50%
-    padding-right: 15px
+    margin-right: 15px
     &__title
       color: $text-color
       margin-left: -3px
@@ -17,7 +17,7 @@
       display: inline-block
       color: $text-color
       font-size: 20px
-      margin-bottom: 52px
+      margin-bottom: 54px
       +bold
   &-list
     margin-left: 1px
@@ -26,7 +26,10 @@
     &__item
       display: flex
       align-items: center
-      margin-bottom: 30px
+      &:nth-child(1)
+        margin-bottom: 29px
+      &:nth-child(2)
+        margin-bottom: 21px
       &:last-child
         margin-bottom: 0
     &__images
@@ -37,13 +40,11 @@
       align-items: center
       justify-content: center
       border-radius: 50%
-      margin-right: 29px
+      margin-right: 32px
     &__text
       max-width: 240px
       font-size: 14px
       line-height: 1.75
-  &-item-1
-    padding-bottom: 6px
 @media (min-width: 960px) and (max-width: 1200px)
   .hero
     &-block
@@ -65,18 +66,7 @@
       &__item
         margin-bottom: 0
         margin-right: 25px
-    &-item-1
-      margin-bottom: 0
-      padding-bottom: 0
-    &-item-2
-      margin-bottom: 0
-    &-item-3
-      margin-bottom: 0
-    // &-text
-    //   flex-basis: 100%
-    // &-image
-    //   flex-basis: 100%
-  
+        height: 48px
 @media (max-width: 959px)
   .hero
     &-block
@@ -102,31 +92,39 @@
     &-image
 @media (max-width: 567px)
   .hero
-    padding: 12px 10px 52px 25px
+    padding: 11px 5px 48px 24px
     &-text
+      margin-right: 0
       &__title
         line-height: 1.25
         margin-left: 0px
-        margin-bottom: 7px
+        margin-bottom: 5px
+        letter-spacing: 0.1px
       &__subtitle
-        margin-left: 2px
-        margin-bottom: 14px
+        margin-left: 3px
+        margin-bottom: 12px
+        width: 220px
+        letter-spacing: 0.1px
+        line-height: 19px
     &-list
+      margin-left: 1px
       &__item
-        margin-left: -2px
+        &:nth-child(1)
+          margin-bottom: 20px
+        &:nth-child(2)
+          margin-bottom: 19px
+          margin-left: -1px
+        &:nth-child(3)
+          margin-bottom: 0
+          margin-left: -1px
       &__images
-        min-height: 35px
-        min-width: 35px
-        margin-right: 15px
+        min-height: 41px
+        min-width: 41px
+        margin-right: 14px
       &__text
         font-size: 12px
-        width: 200px
+        width: 210px
         line-height: 1.2
     &-image
-      width: 94%
-    &-item-1
-      margin-bottom: 16px
-    &-item-2
-      margin-bottom: 20px
-    &-item-3
-      margin-bottom: -6px
+      width: 92%
+      margin-top: -7px
