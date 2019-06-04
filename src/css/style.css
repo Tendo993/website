@@ -77,6 +77,7 @@ img {
 
 .section-title {
   font-size: 24px;
+  text-align: center;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -91,6 +92,10 @@ img {
   padding: 24px 26px 22px 25px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -413,6 +418,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
+  padding-bottom: 75px;
 }
 
 .offer:before {
@@ -433,6 +439,7 @@ img {
 }
 
 .offer__title {
+  text-align: left;
   margin-top: -13px;
   max-width: 360px;
   margin-left: 1px;
@@ -531,7 +538,7 @@ img {
 
 @media (max-width: 567px) {
   .offer {
-    padding: 50px 22px 56px 21px;
+    padding: 50px 22px 50px 21px;
   }
   .offer__title {
     font-size: 18px;
@@ -559,7 +566,7 @@ img {
     padding: 1px 60px 0px 62px;
     line-height: 18px;
     letter-spacing: 0.55px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
   }
   .offer__form {
     margin-bottom: 21px;
@@ -568,7 +575,7 @@ img {
     margin-left: 6px;
   }
   .offer-contacts__text {
-    margin: 0px 0px 7px 0px;
+    margin: 0px -1px 7px 1px;
   }
   .offer-contacts__phone {
     margin-left: -1px;
@@ -605,4 +612,85 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+  background: #f5f5f5 url("../img/portfolio/background-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 93px;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  width: 370px;
+}
+
+.slider__item {
+  margin-right: 30px;
+}
+
+@media (max-width: 1200px) {
+  .slider {
+    margin: auto;
+    padding-left: 15px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 840px) {
+  .slider {
+    margin: auto;
+    max-width: 370px;
+    padding: 0;
+  }
+  .slider__image {
+    max-width: 370px;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 567px) {
+  .portfolio {
+    background-size: 100%;
+    padding: 40px 23px 64px 25px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+  .slider {
+    width: 246px;
+  }
+  .slider__image {
+    width: 246px;
+    height: 186px;
+  }
+  .slider__item {
+    margin-right: 0px;
+  }
 }

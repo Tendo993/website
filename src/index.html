@@ -8,6 +8,7 @@
   <title>Website</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
@@ -113,6 +114,40 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+        </div>
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="img/portfolio/left-arrow.png" alt="left-arrow">
+          </div>
+          <!-- /.arrows__1 -->
+          <div class="arrows__right">
+            <img src="img/portfolio/right-arrow.png" alt="right-arrow">
+          </div>
+          <!-- /.arrows__2 -->
+        </div>
+        <!-- /.arrows -->
+        <!-- /.slider -->
+        <!-- /.section-title portfolio-title -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
   </main>
   <div class="modal" id="modal">
     <div class="modal-dialog">
@@ -124,6 +159,37 @@
   <!-- /.modal -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js" ></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        variableWidth: true,
+        // centerMode: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            variableWidth: false,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 800,
+            variableWidth: false,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+        ]
+      });
+    });
+  </script>
 
 </body>
 
