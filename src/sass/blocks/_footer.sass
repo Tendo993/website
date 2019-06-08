@@ -1,0 +1,102 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 69px
+  padding-left: 200px
+  &__title
+    +bold
+    font-size: 22px
+    line-height: 33px
+    letter-spacing: -0.4px
+    margin-bottom: 89px
+    margin-left: 13px
+  &__bold
+    letter-spacing: -0.3px
+    +bold
+  &__phone
+    text-decoration: none
+    color: #000000
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    list-style: none
+    padding-left: 0
+    margin-left: 12px
+    font-size: 16px
+    line-height: 26px
+    &__icon
+      width: 20px
+      height: 20px
+      line-height: 20px
+      text-align: center
+      margin-right: 23px
+      padding-top: 5px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 29px
+      letter-spacing: 0px
+      &:nth-child(2)
+        margin-bottom: 27px
+
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 50px
+
+@media (max-width: 768px)
+  .footer
+    display: flex
+    flex-wrap: wrap
+  .map
+    position: relative
+    flex-basis: 100%
+  .contacts
+    position: relative
+    flex-basis: 100%
+    padding-left: 0px
+    padding-top: 0px
+    &__title
+      margin-left: auto
+      margin-right: auto
+      max-width: 310px
+    &-list
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      &__item
+        &:nth-child(3)
+          margin-right: 25px
+@media (max-width: 568px)
+  .footer
+    padding-bottom: 0px
+  .map
+    flex-basis: fill
+    order: 1
+  .contacts
+    order: 0
+    padding-left: 10px
+    &__title
+      font-size: 18px
+      margin-left: 13px
+      line-height: 21.5px
+      margin-right: 0
+      margin-bottom: 31px
+    &-list
+      margin-bottom: 28px
+      &__icon
+        margin-right: 12px
+      &__item
+        &:nth-child(1)
+          margin-left: -1px
+        &:nth-child(2)
+          margin-bottom: 29px
+        &:nth-child(3)
+          margin-left: 1px
+          margin-right: 0px
